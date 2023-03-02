@@ -19,9 +19,7 @@
 
       <!-- LP -->
 
-      {% for item in cart %}
-
-      {% with product=item.product %}
+      
 
 
       <br>
@@ -39,7 +37,7 @@
           
           <a href="{{product.get_absolute_url}}" class="text-info text-decoration-none"> <!-- Product get absolute url -->
           
-            <h1 class="h5 pt-2"> {{product.title}}<!-- Product title --> </h1>
+            <h1 class="h5 pt-2"> <!-- Product title --> </h1>
           
           </a>
           
@@ -114,9 +112,7 @@
       
     </div>
     
-    {% endwith %}
-    
-    {% endfor %}
+   
 
 
     <!-- LP -->

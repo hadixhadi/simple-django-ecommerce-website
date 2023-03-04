@@ -108,37 +108,34 @@
             
             <ul class="navbar-nav ms-auto">
 
-                {% if user.is_authenticated %}
+                
 
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                 
                         <a class="btn btn-alert navbar-btn text-white" type="button"  href="#"> <i class="fa fa-home" aria-hidden="true"></i> &nbsp; Dashboard </a>
 
-                    </li>
+                    </li> -->
 
-                    {% else %}
+                    
 
                     <li class="nav-item">
                 
-                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="#"> Register </a>
+                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'register' %}"> Register </a>
 
                     </li>
 
 
-                {% endif %}
+                
 
-                    
-                {% if user.is_authenticated %}
-
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         
 
                         <a class="btn btn-alert navbar-btn text-white" type="button"  href="#"> <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; Logout </a>
 
-                    </li>
+                    </li> -->
 
 
-                    {% else %}
+                   
 
                         <li class="nav-item">
 
@@ -146,7 +143,7 @@
 
                         </li>
 
-                {% endif %}
+                
 
 
                 &nbsp; &nbsp; &nbsp;

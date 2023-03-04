@@ -55,10 +55,17 @@ INSTALLED_APPS = [
 
     'cart', # Django app
 
+    'account', #django app
+
+    'crispy_forms',
+
+    'crispy_bootstrap4',
+
     
 
 
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # To un-block PayPal popups - NB!
 
